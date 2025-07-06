@@ -1,37 +1,34 @@
 # Heart Disease Prediction
 
-This project uses Jupyter Notebooks to build and evaluate machine learning models for predicting the presence of heart disease based on clinical and demographic data.
+This project predicts heart disease using the UCI Heart Disease dataset with machine learning. It implements logistic regression and Random Forest models, handles class imbalance, and includes comprehensive exploratory data analysis (EDA).
 
-## Overview
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
+- [License](#license)
 
-The repository demonstrates data analysis, feature engineering, model selection, and evaluation techniques for heart disease prediction. It is intended for students, data scientists, and healthcare professionals interested in applying machine learning to medical datasets.
+## Project Overview
+The goal is to predict the presence of heart disease (binary classification: 0 = no disease, 1 = disease) using features like age, cholesterol, and chest pain type. The project includes:
+- Data preprocessing (encoding, scaling).
+- EDA with visualizations (correlation heatmap, feature distributions).
+- Model training with Logistic Regression and Random Forest.
+- Class imbalance handling using SMOTE.
+- Hyperparameter tuning and cross-validation.
+- Evaluation with accuracy, precision, recall, F1-score, and ROC-AUC.
 
-## Features
+## Dataset
+The dataset (`heart.csv`) is sourced from the [UCI Heart Disease dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease). It contains:
+- 303 instances.
+- 14 features (e.g., `age`, `sex`, `chol`, `target`).
+- Binary target: 0 (no heart disease), 1 (heart disease).
 
-- Exploratory Data Analysis (EDA) for heart disease datasets
-- Data preprocessing and feature engineering
-- Implementation of various machine learning models
-- Model evaluation and comparison
-- Visualization of results and insights
-
-## Tools Used
-
-- **Jupyter Notebook**: Interactive coding and documentation
-- **Pandas** and **NumPy**: Data manipulation and analysis
-- **Matplotlib** and **Seaborn**: Data visualization
-- **Scikit-learn**: Machine learning models and utilities
-- *(Optional)* Advanced libraries such as XGBoost or LightGBM
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.7+
-- Jupyter Notebook or JupyterLab
-
-### Installation
-
-Clone the repository:
-```bash
-git clone https://github.com/utkarsh884/Heart-disease-prediction.git
-cd
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/utkarsh884/Heart-disease-prediction.git
+   cd Heart-disease-prediction
