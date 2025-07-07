@@ -1,9 +1,11 @@
-# Heart Disease Prediction
+# Heart Disease Prediction 🫀
 
-This project predicts heart disease using the UCI Heart Disease dataset with machine learning. It implements logistic regression and Random Forest models, handles class imbalance, and includes comprehensive exploratory data analysis (EDA).
+A machine learning project that predicts the presence of heart disease using clinical data from the UCI dataset.
 
-## Table of Contents
-- [Project Overview](#project-overview)
+---
+
+## 🔗 Table of Contents
+- [Overview](#overview)
 - [Dataset](#dataset)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,23 +14,32 @@ This project predicts heart disease using the UCI Heart Disease dataset with mac
 - [Future Work](#future-work)
 - [License](#license)
 
-## Project Overview
-The goal is to predict the presence of heart disease (binary classification: 0 = no disease, 1 = disease) using features like age, cholesterol, and chest pain type. The project includes:
-- Data preprocessing (encoding, scaling).
-- EDA with visualizations (correlation heatmap, feature distributions).
-- Model training with Logistic Regression and Random Forest.
-- Class imbalance handling using SMOTE.
-- Hyperparameter tuning and cross-validation.
-- Evaluation with accuracy, precision, recall, F1-score, and ROC-AUC.
+---
 
-## Dataset
-The dataset (`heart.csv`) is sourced from the [UCI Heart Disease dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease). It contains:
-- 303 instances.
-- 14 features (e.g., `age`, `sex`, `chol`, `target`).
-- Binary target: 0 (no heart disease), 1 (heart disease).
+## 🧠 Overview
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/utkarsh884/Heart-disease-prediction.git
-   cd Heart-disease-prediction
+This project uses machine learning models (Logistic Regression and Random Forest) to predict the likelihood of heart disease in patients based on clinical attributes. It includes:
+- Data preprocessing and outlier handling
+- SMOTE for class imbalance
+- Feature engineering
+- Model training and hyperparameter tuning
+- Evaluation using accuracy, precision, recall, ROC-AUC
+- Saving and loading trained models
+
+---
+
+## 📂 Dataset
+
+The dataset is from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/heart+Disease) and includes 14 features such as:
+- Age, sex, chest pain type, cholesterol, max heart rate, etc.
+- Target variable: `1` (has disease), `0` (no disease)
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/utkarsh884/Heart-disease-prediction.git
+cd Heart-disease-prediction
